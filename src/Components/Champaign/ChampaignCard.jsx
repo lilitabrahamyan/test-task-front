@@ -4,6 +4,8 @@ import { Divider, Button } from "../shared";
 import { ToFade } from "../tools/ToFade/ToFade";
 import { ProgressBar } from "../../ui-kit/ProgressBar/ProgressBar";
 
+import { Padding } from "../shared";
+
 import { ReactComponent as ClockIcon } from "../../assets/images/icons/clock-icon.svg";
 
 export const ChampaignCard = memo(
@@ -131,8 +133,4 @@ const ChampaignDescription = styled.span`
   border-bottom: 1px solid #cecece;
   padding: 20px;
   line-height: 25px;
-`;
-
-const Padding = styled.div`
-  padding: ${(props) => (props.value ? props.value : "")};
 `;
